@@ -303,7 +303,7 @@ function main() {
     uMatrizProyeccion = gl.getUniformLocation(programaID, "uMatrizProyeccion");
     uMatrizVista = gl.getUniformLocation(programaID, "uMatrizVista");
     uMatrizModelo = gl.getUniformLocation(programaID, "uMatrizModelo");
-    ortho(MatrizProyeccion, -5*2.26, 5*2.26, -5, 5, -5, 5);
+    ortho(MatrizProyeccion, -5*2.36, 5*2.36, -5, 5, -5, 5);
     gl.uniformMatrix4fv(uMatrizProyeccion, false, MatrizProyeccion);
     identidad(MatrizVista);
     gl.uniformMatrix4fv(uMatrizVista, false, MatrizVista);
